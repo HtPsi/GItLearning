@@ -396,6 +396,14 @@ comment
 \end_layout
 
 \begin_layout Enumerate
+git pull --no-commit && git commit -m ‘comment’ 避免出现configuration
+\end_layout
+
+\begin_layout Enumerate
+git fetch 代替git pull 需要后面跟 git merge
+\end_layout
+
+\begin_layout Enumerate
 git rebase 把分叉的提交历史“整理”成一条直线，看上去更直观。缺点是本地的分叉提交已经被修改过了
 \end_layout
 
@@ -417,6 +425,30 @@ git tag -a v0.1 -m "version 0.1 released" 1094adb 创建带有说明的标签，
 
 \begin_layout Enumerate
 git show v0.1 可以看到说明文字
+\end_layout
+
+\begin_layout Enumerate
+git tag -d v0.1 删除标签
+\end_layout
+
+\begin_layout Enumerate
+git push origin v1.0 推送标签到远程
+\end_layout
+
+\begin_layout Enumerate
+git push origin --tags 一次性推送全部尚未推送到远程的本地标签
+\end_layout
+
+\begin_layout Enumerate
+git push origin :refs/tags/v0.9 先本地删除，再远程删除标签
+\end_layout
+
+\begin_layout Enumerate
+git add -f App.class 强制添加文件（尽管被ignore）
+\end_layout
+
+\begin_layout Enumerate
+git check-ignore -v App.class 找出相关联的ignore规则
 \end_layout
 
 \begin_layout Standard
